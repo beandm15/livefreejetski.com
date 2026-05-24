@@ -192,31 +192,7 @@ footer{background:rgba(245,237,224,.95);padding:2rem 8%;display:flex;align-items
     .booqable-product-button .quantity-selector,
     [class*="quantity"] { display: none !important; }
 
-  
-/* ===== Boating Certificates Section ===== */
-#certificates{padding:7rem 5%;background:var(--off);}
-.cert-intro{text-align:center;max-width:660px;margin:0 auto 3.5rem;}
-.cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem;max-width:1180px;margin:0 auto;}
-.cert-card{background:var(--white);border:1.5px solid #dde6f0;border-radius:14px;padding:1.75rem 1.75rem 1.5rem;display:flex;flex-direction:column;gap:.85rem;position:relative;transition:box-shadow .2s,border-color .2s;}
-.cert-card:hover{box-shadow:0 8px 28px rgba(10,22,40,.1);border-color:var(--wave);}
-.cert-card.featured{border-color:var(--sky);box-shadow:0 4px 20px rgba(45,125,210,.14);}
-.cert-badge{position:absolute;top:-1px;right:1.2rem;color:#fff;font-size:.6rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:.28rem .72rem;border-radius:0 0 7px 7px;}
-.cert-badge.blue{background:var(--sky);}
-.cert-badge.green{background:#1a8c5a;}
-.cert-badge.slate{background:var(--muted);}
-.cert-badge.gold{background:var(--gold);color:var(--navy);}
-.cert-provider{font-family:"DM Serif Display",serif;font-size:1.12rem;color:var(--navy);line-height:1.25;padding-top:.15rem;}
-.cert-state-label{font-size:.68rem;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;}
-.cert-cost{font-size:1.6rem;font-weight:800;color:var(--navy);line-height:1;}
-.cert-cost span{font-size:.78rem;font-weight:500;color:var(--muted);}
-.cert-meta{display:flex;flex-direction:column;gap:.4rem;font-size:.82rem;color:var(--text);}
-.cert-row{display:flex;align-items:flex-start;gap:.5rem;}
-.cert-icon{flex-shrink:0;font-size:.85rem;margin-top:.06rem;}
-.cert-note{font-size:.77rem;color:var(--muted);font-style:italic;padding-top:.55rem;border-top:1px solid #edf2f7;margin-top:.1rem;}
-.cert-btn{margin-top:auto;display:inline-flex;align-items:center;gap:.4rem;background:var(--ocean);color:#fff;text-decoration:none;font-size:.84rem;font-weight:600;padding:.6rem 1.2rem;border-radius:5px;transition:background .2s;align-self:flex-start;}
-.cert-btn:hover{background:var(--sky);}
-.cert-disclaimer{text-align:center;margin-top:2.5rem;font-size:.81rem;color:var(--muted);max-width:620px;margin-left:auto;margin-right:auto;}
-</style>
+  </style>
 </head>
 <body>
 <nav>
@@ -226,7 +202,7 @@ footer{background:rgba(245,237,224,.95);padding:2rem 8%;display:flex;align-items
   </div>
   <ul class="nav-links">
     <li><a href="#fleet">Fleet</a></li><li><a href="#how">How It Works</a></li>
-    <li><a href="#pricing">Pricing</a></li><li><a href="#certificates">Get Certified</a></li><li><a href="#faq">FAQ</a></li>
+    <li><a href="#pricing">Pricing</a></li><li><a href="#faq">FAQ</a></li>
     <li><a href="#contact">Contact</a></li><li><a href="/rental-agreement.html" target="_blank">Rental Agreement</a></li><li><a href="https://bookings.nhjetfun.com" target="_blank" class="nav-cta">Book Now</a></li>
   </ul>
 </nav>
@@ -343,7 +319,7 @@ footer{background:rgba(245,237,224,.95);padding:2rem 8%;display:flex;align-items
         <div class="dpoint"><div class="dpoint-icon">&#128666;</div><div><div class="dpoint-title">Delivered to Your Door or Dock</div><div class="dpoint-text">Give us any NH address &mdash; lakehouse, campground, marina &mdash; and we&apos;ll have it there by Saturday 5:00 PM.</div></div></div>
         <div class="dpoint"><div class="dpoint-icon">&#9889;</div><div><div class="dpoint-title">Early Delivery Available</div><div class="dpoint-text">Available earlier on Saturday? We&apos;ll do our best to deliver ahead of schedule when coordinated in advance.</div></div></div>
         <div class="dpoint"><div class="dpoint-icon">&#128737;</div><div><div class="dpoint-title">Safety Walkthrough Included</div><div class="dpoint-text">We walk every renter through controls, kill switch, PFDs, and local water rules before handing over the keys.</div></div></div>
-        <div class="dpoint"><div class="dpoint-icon">&#128205;</div><div><div class="dpoint-title">All of New Hampshire</div><div class="dpoint-text">Winnipesaukee, Squam, Sunapee, Newfound &mdash; if it&apos;s in NH, we&apos;ll get there.</div></div></div>
+        <div class="dpoint"><div class="dpoint-icon">&#128205;</div><div><div class="dpoint-title">All of New Hampshire</div><div class="dpoint-text">Winnipesaukee, Squam, Sunapee, Newfound, Great Bay &mdash; if it&apos;s in NH, we&apos;ll get there.</div></div></div>
       </div>
     </div>
   </div>
@@ -440,83 +416,14 @@ footer{background:rgba(245,237,224,.95);padding:2rem 8%;display:flex;align-items
   </div>
 </section>
 
-
-<section id="certificates">
-  <div class="cert-intro">
-    <div class="section-tag">Boating Safety Certificate</div>
-    <h2 class="section-title">Get Certified Before You Ride</h2>
-    <p class="section-lead">New Hampshire requires a Boating Safety Certificate for anyone born on or after January 1, 1975 who operates a motorized vessel. All four options below are NH-recognized, fully online, and completable in an afternoon.</p>
-  </div>
-  <div class="cert-grid">
-
-    <div class="cert-card featured">
-      <div class="cert-badge blue">Most Popular</div>
-      <div class="cert-provider">Boat-Ed New Hampshire</div>
-      <div class="cert-state-label">New Hampshire &middot; Official NH Provider</div>
-      <div class="cert-cost">~$50 <span>total</span></div>
-      <div class="cert-meta">
-        <div class="cert-row"><span class="cert-icon">&#128176;</span><span>~$32 course + $17.95 NH fee</span></div>
-        <div class="cert-row"><span class="cert-icon">&#9201;</span><span>Self-paced &mdash; typically 3&ndash;4 hours</span></div>
-        <div class="cert-row"><span class="cert-icon">&#128196;</span><span>Printable temp certificate valid 365 days; permanent card mailed</span></div>
-      </div>
-      <div class="cert-note">Official NH-approved provider. The most direct path to compliance.</div>
-      <a href="https://www.boat-ed.com/newhampshire/" target="_blank" rel="noopener" class="cert-btn">Start Course &rarr;</a>
-    </div>
-
-    <div class="cert-card">
-      <div class="cert-badge green">Fun &amp; Interactive</div>
-      <div class="cert-provider">iLearnToBoat New Hampshire</div>
-      <div class="cert-state-label">New Hampshire &middot; Fully NH-Approved</div>
-      <div class="cert-cost">~$50 <span>total</span></div>
-      <div class="cert-meta">
-        <div class="cert-row"><span class="cert-icon">&#128176;</span><span>~$40 course + $9.95 state fee</span></div>
-        <div class="cert-row"><span class="cert-icon">&#9201;</span><span>Often under 3 hours (no minimum seat time)</span></div>
-        <div class="cert-row"><span class="cert-icon">&#128196;</span><span>Printable temp upon passing; permanent card follows</span></div>
-      </div>
-      <div class="cert-note">Game-style format makes certification the most engaging way to learn.</div>
-      <a href="https://www.ilearntoboat.com/newhampshire/" target="_blank" rel="noopener" class="cert-btn">Start Course &rarr;</a>
-    </div>
-
-    <div class="cert-card">
-      <div class="cert-badge slate">Out-of-State Option</div>
-      <div class="cert-provider">Boat-Ed Pennsylvania</div>
-      <div class="cert-state-label">Pennsylvania &middot; NH-Accepted Certificate</div>
-      <div class="cert-cost">~$55 <span>total</span></div>
-      <div class="cert-meta">
-        <div class="cert-row"><span class="cert-icon">&#128176;</span><span>~$39.95 course + ~$15 PA fees</span></div>
-        <div class="cert-row"><span class="cert-icon">&#9201;</span><span>3&ndash;4 hours, fully online for ages 18+</span></div>
-        <div class="cert-row"><span class="cert-icon">&#128196;</span><span>Temp valid 60 days; permanent PA card mailed in 4&ndash;6 weeks</span></div>
-      </div>
-      <div class="cert-note">NH accepts this PA certificate. A solid option if you prefer Boat-Ed but want PA registration.</div>
-      <a href="https://www.boat-ed.com/pennsylvania/" target="_blank" rel="noopener" class="cert-btn">Start Course &rarr;</a>
-    </div>
-
-    <div class="cert-card">
-      <div class="cert-badge gold">Best Value</div>
-      <div class="cert-provider">BoatUS Foundation Pennsylvania</div>
-      <div class="cert-state-label">Pennsylvania &middot; NASBLA-Approved, NH-Accepted</div>
-      <div class="cert-cost">~$17 <span>total</span></div>
-      <div class="cert-meta">
-        <div class="cert-row"><span class="cert-icon">&#128176;</span><span>~$17 state processing fee &mdash; course content is free</span></div>
-        <div class="cert-row"><span class="cert-icon">&#9201;</span><span>4&ndash;8 hours at your own pace</span></div>
-        <div class="cert-row"><span class="cert-icon">&#128196;</span><span>Printable temp valid 60 days; permanent PA card mailed</span></div>
-      </div>
-      <div class="cert-note">Free course content with only a small state processing fee. NH-recognized via NASBLA approval.</div>
-      <a href="https://boatus.org/free-courses/free-boating-safety-course/pennsylvania/" target="_blank" rel="noopener" class="cert-btn">Start Free Course &rarr;</a>
-    </div>
-
-  </div>
-  <p class="cert-disclaimer">&#9432;&nbsp; You must present your certificate at delivery &mdash; digital copies accepted. Questions? <a href="#contact" style="color:var(--sky);">Reach out</a> before booking.</p>
-</section>
-
 <section id="faq">
   <div class="section-tag">FAQ</div>
   <h2 class="section-title">Common Questions</h2>
   <p class="section-lead">Everything you need to know before your first ride.</p>
   <div class="faq-grid">
-    <div class="faq-item"><div class="faq-q">Do I need a boating license?</div><div class="faq-a">Yes. NH requires a Boating Safety Certificate for anyone born on or after January 1, 1975 who operates a motorized vessel. See our <a href="#certificates" style="color:var(--sky);">Get Certified</a> section for four easy online options &mdash; most completable in an afternoon. You must present your certificate at delivery.</div></div>
+    <div class="faq-item"><div class="faq-q">Do I need a boating license?</div><div class="faq-a">NH requires a Boating Safety Certificate for anyone born on or after January 1, 1975 who operates a motorized vessel. Free online courses at boat-ed.com/newhampshire. Must present at delivery.</div></div>
     <div class="faq-item"><div class="faq-q">What&apos;s the minimum operator age?</div><div class="faq-a">All operators must be at least 21 years old. We verify age by government-issued photo ID at delivery. Passengers of any age welcome with a qualified adult operator.</div></div>
-    <div class="faq-item"><div class="faq-q">Where can I ride?</div><div class="faq-a">Any freshwater body in NH &mdash; Winnipesaukee, Squam, Sunapee, Newfound, and hundreds of freshwater lakes and rivers statewide. (Saltwater and tidal bodies such as Great Bay are not permitted.) Interstate transport requires prior written approval.</div></div>
+    <div class="faq-item"><div class="faq-q">Where can I ride?</div><div class="faq-a">Any freshwater body in NH &mdash; Winnipesaukee, Squam, Sunapee, Newfound, Great Bay, and hundreds of lakes and rivers statewide. Interstate transport requires prior written approval.</div></div>
     <div class="faq-item"><div class="faq-q">Can I use it for tubing or wakeboarding?</div><div class="faq-a">The Wake 155 (SK-01) is tow-sport ready with advance written authorization. The GTR 230 (SK-02) can also tow but is better suited to performance riding. Ask us before booking if towing is a priority.</div></div>
     <div class="faq-item"><div class="faq-q">What&apos;s included in the price?</div><div class="faq-a">Delivery and pickup (NH), USCG-approved PFDs for all riders, pre-delivery safety walkthrough, and all registration and safety documents. Fuel is Renter&apos;s responsibility.</div></div>
     <div class="faq-item"><div class="faq-q">How does the security deposit work?</div><div class="faq-a">$900 refundable deposit collected at delivery, returned within 5 business days after satisfactory return &mdash; less any amounts for damage, late fees, or fuel shortfall.</div></div>

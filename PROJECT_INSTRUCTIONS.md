@@ -113,6 +113,14 @@ git push origin main
 
 ## 📝 Recent Changes
 
+### May 24, 2026 — Boating Certificates Section & Great Bay Removal
+- **Added:** New `#certificates` section with 4 NH-recognized online certification options
+- **Added:** "Get Certified" nav link between Pricing and FAQ
+- **Removed:** All promotional references to Great Bay (saltwater, not permitted for jet ski rentals)
+- **Updated:** FAQ "Where can I ride?" answer now notes saltwater/tidal bodies are not permitted
+- **Updated:** FAQ "Do I need a boating license?" answer links to the new certificates section
+- **File:** `index.backup.20260524.html` saved as prior version backup
+
 ### May 24, 2026 - Contact Section Redesign
 - **Removed:** Email contact form (not functioning)
 - **Removed:** Phone number field
@@ -319,6 +327,7 @@ If adding team members to the project:
 | Date | Changes | Version |
 |------|---------|---------|
 | May 24, 2026 | Connected GitHub to Netlify, redesigned contact section | 2.0 |
+| May 24, 2026 | Added Boating Certificates section (4 options); removed Great Bay references; added Get Certified nav link; updated FAQ boating license answer | 2.1 |
 | Sept 20, 2025 | Added jet ski images and pricing | 1.5 |
 | Sept 13, 2025 | Initial website launch | 1.0 |
 
