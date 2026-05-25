@@ -40,6 +40,7 @@ Note: New Hampshire law (RSA 270:74) prohibits jet skis ("skicraft") on public w
 ## Guides (long-form reference)
 - Complete jet ski rental guide (how delivery works, costs, season, lakes, choosing a Sea-Doo): https://nhjetfun.com/guide.html
 - New Hampshire boating license guide (who needs a certificate, age rules, approved courses): https://nhjetfun.com/boating-license.html
+- Sea-Doo riding tutorial for first-time users (keys and kill switch, steering, the 150-foot rule, shallow-water/impeller care, reading buoys, daylight-only operation, and towing rules): https://nhjetfun.com/tutorial.html
 
 ## Booking and contact
 - Book online: https://bookings.nhjetfun.com
@@ -50,4 +51,5 @@ Note: New Hampshire law (RSA 270:74) prohibits jet skis ("skicraft") on public w
 - Home page: https://nhjetfun.com/
 - Jet ski rental guide: https://nhjetfun.com/guide.html
 - NH boating license guide: https://nhjetfun.com/boating-license.html
+- Sea-Doo riding tutorial: https://nhjetfun.com/tutorial.html
 - Online booking: https://bookings.nhjetfun.com
