@@ -153,8 +153,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .nav-toggle.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
 section{scroll-margin-top:80px;}
 #hero{min-height:100vh;position:relative;display:flex;align-items:center;overflow:hidden;}
-.hero-bg{position:absolute;inset:0;z-index:0;background-image:url("/hero-both-seadoos.jpg");background-size:cover;background-position:center 40%;}
-.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,rgba(10,22,40,.91) 0%,rgba(10,22,40,.72) 55%,rgba(10,22,40,.3) 100%);}
+.hero-bg{position:absolute;inset:0;z-index:0;background-image:url("/hero-both-seadoos.jpg");background-size:cover;background-position:center 40%;filter:brightness(1.18) saturate(1.06);}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,rgba(10,22,40,.84) 0%,rgba(10,22,40,.55) 55%,rgba(10,22,40,.15) 100%);}
 .hero-content{position:relative;z-index:2;padding:0 8%;max-width:710px;animation:fadeUp .9s ease both;}
 @keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
 .hero-eyebrow{display:inline-flex;align-items:center;gap:.6rem;color:var(--wave);font-size:.74rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;margin-bottom:1.2rem;}
@@ -389,13 +389,27 @@ footer{background:rgba(245,237,224,.95);padding:2rem 8%;display:flex;align-items
 .cert-btn{margin-top:auto;display:inline-flex;align-items:center;gap:.4rem;background:var(--ocean);color:#fff;text-decoration:none;font-size:.84rem;font-weight:600;padding:.6rem 1.2rem;border-radius:5px;transition:background .2s;align-self:flex-start;}
 .cert-btn:hover{background:var(--sky);}
 .cert-disclaimer{text-align:center;margin-top:2.5rem;font-size:.81rem;color:var(--muted);max-width:620px;margin-left:auto;margin-right:auto;}
+
+/* ===== Mobile home hero layout ===== */
+@media(max-width:600px){
+  #hero{min-height:90vh;justify-content:flex-start;align-items:stretch;padding:92px 0 0;position:relative;overflow:hidden;}
+  .hero-content{max-width:none;padding:0 6% 6.5rem;}
+  .hero-eyebrow{display:none;}
+  .hero-title{font-size:clamp(1.7rem,7.8vw,2.6rem);line-height:1;margin-bottom:1rem;white-space:nowrap;}
+  .hero-title em{display:inline;}
+  .hero-sub{font-size:.95rem;line-height:1.6;margin-bottom:1.6rem;max-width:none;}
+  .hero-stats{position:absolute;left:0;right:0;bottom:0;margin:0;padding:1rem 6% 1.15rem;display:flex;flex-wrap:nowrap;justify-content:space-between;gap:.4rem;background:linear-gradient(0deg,rgba(10,22,40,.9) 0%,rgba(10,22,40,.5) 70%,rgba(10,22,40,0) 100%);}
+  .hero-stats .stat{flex:1 1 0;min-width:0;}
+  .stat-num{font-size:1.5rem;}
+  .stat-label{font-size:.56rem;letter-spacing:.05em;margin-top:.18rem;}
+}
 </style>
 </head>
 <body>
 <nav>
   <div class="nav-brand">
     <a href="#" class="nav-logo">NH <span>Jet</span> Fun</a>
-    <div class="nav-sub">Jet Ski Rentals · nhjetfun.com</div>
+    <div class="nav-sub">Jet Ski Rentals &middot; <span style="text-transform:none">NHJetFun.com</span></div>
   </div>
   <ul class="nav-links" id="navLinks">
     <li><a href="#fleet">Fleet</a></li><li><a href="#how">How It Works</a></li><li><a href="#lakes">Lakes Served</a></li>
@@ -414,8 +428,8 @@ footer{background:rgba(245,237,224,.95);padding:2rem 8%;display:flex;align-items
   <div class="hero-bg"></div>
   <div class="hero-content">
     <div class="hero-eyebrow">Hampstead, New Hampshire</div>
-    <h1 class="hero-title">Ride the<em>Open Water.</em></h1>
-    <p class="hero-sub">Two premium Sea-Doo personal watercraft. Weekly rentals. Delivered to your NH lake, campsite, or dock — every Saturday.</p>
+    <h1 class="hero-title">Ride the <em>Open Water.</em></h1>
+    <p class="hero-sub">Premium Sea-Doo Jet Skis. Weekly rentals delivered to your NH lake or pond &mdash; every Saturday.</p>
     <div class="hero-actions">
       <a href="https://bookings.nhjetfun.com" target="_blank" class="btn-primary">&#128197; Check Availability &amp; Book</a>
       <a href="#fleet" class="btn-ghost">View Our Fleet &#8595;</a>
@@ -423,7 +437,7 @@ footer{background:rgba(245,237,224,.95);padding:2rem 8%;display:flex;align-items
   </div>
   <div class="hero-stats">
     <div class="stat"><div class="stat-num">2</div><div class="stat-label">Premium Craft</div></div>
-    <div class="stat"><div class="stat-num"><span>NH</span></div><div class="stat-label">Statewide Delivery</div></div>
+    <div class="stat"><div class="stat-num"><span>NH</span></div><div class="stat-label">Delivery</div></div>
     <div class="stat"><div class="stat-num">7</div><div class="stat-label">Days on Water</div></div>
   </div>
 </section>
@@ -497,9 +511,9 @@ footer{background:rgba(245,237,224,.95);padding:2rem 8%;display:flex;align-items
   <p class="section-lead">We handle logistics. You handle the fun. Here&apos;s how an NH Jet Fun rental week works.</p>
   <div class="steps">
     <div class="step"><div class="step-num">1</div><div class="step-title">Choose &amp; Book</div><div class="step-desc">Pick your craft and week online. A 15% non-refundable reservation deposit locks your dates instantly.</div></div>
-    <div class="step"><div class="step-num">2</div><div class="step-title">We Deliver</div><div class="step-desc">We bring the Craft to your NH address by Saturday 5:00 PM. Ready to splash — earlier by arrangement.</div></div>
+    <div class="step"><div class="step-num">2</div><div class="step-title">We Meet You</div><div class="step-desc">We meet you at your lake&apos;s public launch ramp by Saturday 5:00 PM. Ready to splash &mdash; earlier by arrangement.</div></div>
     <div class="step"><div class="step-num">3</div><div class="step-title">Ride All Week</div><div class="step-desc">Seven full days on the lake. PFDs included. No hourly clock ticking in the background.</div></div>
-    <div class="step"><div class="step-num">4</div><div class="step-title">We Pick Up</div><div class="step-desc">We retrieve the Craft Saturday by 10:00 AM. Security deposit returned within 5 business days.</div></div>
+    <div class="step"><div class="step-num">4</div><div class="step-title">We Pick Up</div><div class="step-desc">We meet you back at the launch ramp Saturday by 10:00 AM. Security deposit returned within 5 business days.</div></div>
   </div>
 </section>
 
@@ -510,10 +524,10 @@ footer{background:rgba(245,237,224,.95);padding:2rem 8%;display:flex;align-items
     </div>
     <div>
       <div class="section-tag">Delivery &amp; Pickup</div>
-      <h2 class="section-title">We Come to You.</h2>
-      <p class="section-lead">No tow vehicle, no trailer permits, no boat ramp stress. We deliver fully-fueled and ready to ride.</p>
+      <h2 class="section-title">We Meet You at the Ramp.</h2>
+      <p class="section-lead">No tow vehicle, no trailer permits, no launching headaches. We meet you at your lake&apos;s public launch ramp, fully-fueled and ready to ride.</p>
       <div class="delivery-points">
-        <div class="dpoint"><div class="dpoint-icon">&#128666;</div><div><div class="dpoint-title">Delivered to Your Door or Dock</div><div class="dpoint-text">Give us any NH address &mdash; lakehouse, campground, marina &mdash; and we&apos;ll have it there by Saturday 5:00 PM.</div></div></div>
+        <div class="dpoint"><div class="dpoint-icon">&#128666;</div><div><div class="dpoint-title">We Meet You at the Launch Ramp</div><div class="dpoint-text">Tell us which NH lake or pond you&apos;ll be on, and we&apos;ll meet you at its public launch ramp by Saturday 5:00 PM &mdash; not your cabin or dock.</div></div></div>
         <div class="dpoint"><div class="dpoint-icon">&#9889;</div><div><div class="dpoint-title">Early Delivery Available</div><div class="dpoint-text">Available earlier on Saturday? We&apos;ll do our best to deliver ahead of schedule when coordinated in advance.</div></div></div>
         <div class="dpoint"><div class="dpoint-icon">&#128737;</div><div><div class="dpoint-title">Safety Walkthrough Included</div><div class="dpoint-text">We walk every renter through controls, kill switch, PFDs, and local water rules before handing over the keys.</div></div></div>
         <div class="dpoint"><div class="dpoint-icon">&#128205;</div><div><div class="dpoint-title">Central &amp; Southern NH</div><div class="dpoint-text">From the Massachusetts line north to Squam Lake &mdash; Winnipesaukee, Winnisquam, Newfound, Squam and our southern NH ponds. See our <a href="#lakes" style="color:var(--sky);">full list of lakes served</a>.</div></div></div>
@@ -657,8 +671,8 @@ footer{background:rgba(245,237,224,.95);padding:2rem 8%;display:flex;align-items
     <div class="lifestyle-text">
       <div class="section-tag">New Hampshire Lakes</div>
       <h2 class="section-title">Your Lakes. Your Schedule.</h2>
-      <p>From the open expanse of Lake Winnipesaukee to the quiet coves of Squam and Newfound &mdash; wherever you are in New Hampshire, we&apos;ll bring the Craft to you.</p>
-      <p>No tow vehicle. No trailer logistics. No figuring out the boat launch. Just tell us where and when.</p>
+      <p>From the open expanse of Lake Winnipesaukee to the quiet coves of Squam and Newfound &mdash; wherever you ride in New Hampshire, we&apos;ll meet you at the launch ramp with the Craft.</p>
+      <p>No tow vehicle. No trailer logistics. No figuring out how to launch. Just tell us your lake and your week.</p>
       <div style="margin-top:1.8rem;"><a href="https://bookings.nhjetfun.com" target="_blank" class="btn-primary">Book Your Week &rarr;</a></div>
     </div>
   </div>
@@ -785,7 +799,7 @@ footer{background:rgba(245,237,224,.95);padding:2rem 8%;display:flex;align-items
       <h2 class="section-title">Local Owners. Real Water People.</h2>
       <div class="about-text">
         <p>NH Jet Fun is a small, owner-operated business based in Hampstead, New Hampshire. We started renting because we love this state&apos;s lakes &mdash; and we wanted to make that experience available to more people without the expense of ownership.</p>
-        <p>We personally maintain both craft, deliver them to your location, and are reachable throughout your rental if anything comes up. This isn&apos;t a faceless fleet &mdash; it&apos;s two machines we care about, rented to people who&apos;ll treat them with respect.</p>
+        <p>We personally maintain both craft, meet you at the launch ramp, and are reachable throughout your rental if anything comes up. This isn&apos;t a faceless fleet &mdash; it&apos;s two machines we care about, rented to people who&apos;ll treat them with respect.</p>
         <p>We operate under Veralase LLC, a registered New Hampshire LLC. All rentals are backed by a comprehensive agreement governed by NH law, and we carry insurance on both craft.</p>
       </div>
     </div>
@@ -799,7 +813,7 @@ footer{background:rgba(245,237,224,.95);padding:2rem 8%;display:flex;align-items
           <div class="req-item"><div class="req-dot"></div><div><strong>Signed rental agreement</strong> &mdash; <a href="/NH-Jet-Fun-Rental-Agreement.pdf" target="_blank" rel="noopener noreferrer" style="color:var(--sky);">review it here</a>, sent digitally before delivery</div></div>
           <div class="req-item"><div class="req-dot"></div><div><strong>15% reservation deposit</strong> paid at booking</div></div>
           <div class="req-item"><div class="req-dot"></div><div><strong>Balance + $900 security deposit</strong> paid at delivery</div></div>
-          <div class="req-item"><div class="req-dot"></div><div><strong>NH delivery address</strong> &mdash; we deliver within NH only</div></div>
+          <div class="req-item"><div class="req-dot"></div><div><strong>NH lake or pond</strong> &mdash; we meet you at the launch ramp, within NH only</div></div>
         </div>
       </div>
     </div>

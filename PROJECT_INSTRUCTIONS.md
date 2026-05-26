@@ -2,7 +2,7 @@
 
 **Project Name:** NH Jet Fun (nhjetfun.com)  
 **Status:** Live and Active  
-**Last Updated:** May 24, 2026
+**Last Updated:** May 25, 2026
 
 ---
 
@@ -112,6 +112,14 @@ git push origin main
 ---
 
 ## 📝 Recent Changes
+
+### May 25, 2026 — Hero Copy, Launch-Ramp Model, Brightness & Mobile Layout
+- **Updated:** Home page hero subtitle to "Premium Sea-Doo Jet Skis. Weekly rentals delivered to your NH lake or pond — every Saturday."
+- **Changed (site-wide):** Delivery messaging now states we meet the customer at the public **launch ramp**, not at their cabin or dock. Updated in `index.html` (How It Works, Delivery section, About, Lifestyle, Requirements checklist), `guide.html` (FAQ schema, lead, process steps), `boat-vs-jet-ski.html`, and `llms.txt`.
+- **Updated:** Hero background photo brightened via CSS (`filter:brightness(1.18) saturate(1.06)` on `.hero-bg`) with a lighter overlay gradient — applies to PC and mobile.
+- **Updated:** Domain now displays as **NHJetFun.com** (mixed case) in the nav sub-text on all pages, overriding the prior all-caps `text-transform`.
+- **Updated (mobile home page):** "Hampstead, New Hampshire" eyebrow hidden on mobile; "Ride the Open Water." now renders on one line; the 2 / NH / 7 stat bar is pinned to the bottom of the hero image in a single row (labels: Premium Craft / Delivery / Days on Water). "Statewide Delivery" label shortened to "Delivery".
+- **Files touched:** `index.html`, `guide.html`, `boat-vs-jet-ski.html`, `boating-license.html`, `tutorial.html`, `llms.txt`
 
 ### May 24, 2026 — Boating Certificates Section & Great Bay Removal
 - **Added:** New `#certificates` section with 4 NH-recognized online certification options
@@ -326,6 +334,7 @@ If adding team members to the project:
 
 | Date | Changes | Version |
 |------|---------|---------|
+| May 25, 2026 | New hero subtitle; site-wide launch-ramp delivery model; brighter hero photo; NHJetFun.com mixed-case domain; mobile hero layout (one-line title, bottom stat bar, hidden eyebrow) | 2.2 |
 | May 24, 2026 | Connected GitHub to Netlify, redesigned contact section | 2.0 |
 | May 24, 2026 | Added Boating Certificates section (4 options); removed Great Bay references; added Get Certified nav link; updated FAQ boating license answer | 2.1 |
 | Sept 20, 2025 | Added jet ski images and pricing | 1.5 |
@@ -336,7 +345,7 @@ If adding team members to the project:
 ## 📄 Document Information
 
 - **Created:** May 24, 2026
-- **Last Updated:** May 24, 2026
+- **Last Updated:** May 25, 2026
 - **Maintained By:** David Bean (beandm15)
 - **Location:** GitHub repository documentation
 - **Status:** Active & Current
