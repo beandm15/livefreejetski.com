@@ -116,7 +116,8 @@ git push origin main
 ### May 25, 2026 — Hero Copy, Launch-Ramp Model, Brightness & Mobile Layout
 - **Updated:** Home page hero subtitle to "Premium Sea-Doo Jet Skis. Weekly rentals delivered to your NH lake or pond — every Saturday."
 - **Changed (site-wide):** Delivery messaging now states we meet the customer at the public **launch ramp**, not at their cabin or dock. Updated in `index.html` (How It Works, Delivery section, About, Lifestyle, Requirements checklist), `guide.html` (FAQ schema, lead, process steps), `boat-vs-jet-ski.html`, and `llms.txt`.
-- **Updated:** Hero background photo brightened via CSS (`filter:brightness(1.18) saturate(1.06)` on `.hero-bg`) with a lighter overlay gradient — applies to PC and mobile.
+- **Updated:** Hero background photo brightened via CSS (`filter:brightness(1.32) saturate(1.08)` on `.hero-bg`) with a lighter overlay gradient and text shadows on the headline/subtitle for legibility — applies to PC and mobile.
+- **Updated:** Hero layout (PC and mobile) — headline stays at the top; the subtitle and the "Check Availability & Book" / "View Our Fleet" buttons are pushed to the bottom third so they no longer sit on top of the jet ski.
 - **Updated:** Domain now displays as **NHJetFun.com** (mixed case) in the nav sub-text on all pages, overriding the prior all-caps `text-transform`.
 - **Updated (mobile home page):** "Hampstead, New Hampshire" eyebrow hidden on mobile; "Ride the Open Water." now renders on one line; the 2 / NH / 7 stat bar is pinned to the bottom of the hero image in a single row (labels: Premium Craft / Delivery / Days on Water). "Statewide Delivery" label shortened to "Delivery".
 - **Files touched:** `index.html`, `guide.html`, `boat-vs-jet-ski.html`, `boating-license.html`, `tutorial.html`, `llms.txt`
