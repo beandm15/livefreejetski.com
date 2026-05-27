@@ -34,7 +34,7 @@
 <text x="380" y="42.0" text-anchor="middle" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="12" fill="#5a7090">&#8593; Lakes Region &amp; White Mountains &#8212; outside our service area</text>
 <text x="546" y="93.6" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="10.5" font-weight="700" fill="#e85f2d">Squam Lake</text>
 <text x="546" y="107.6" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="9" fill="#e85f2d">northern service edge</text>
-<text x="250" y="168.0" text-anchor="middle" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="13" letter-spacing="2.5" font-weight="700" fill="#9fb2c9">SOUTHERN NEW HAMPSHIRE</text>
+<text x="150" y="150.0" text-anchor="middle" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="13" letter-spacing="2.5" font-weight="700" fill="#9fb2c9">LAKES REGION</text>
 <text x="30" y="420.0" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="11" fill="#9fb2c9">VERMONT</text>
 <text x="690" y="350.0" text-anchor="end" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="11" fill="#9fb2c9">MAINE</text>
 <text x="300" y="828.8" text-anchor="middle" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="11" fill="#9fb2c9">MASSACHUSETTS</text>
@@ -61,10 +61,4 @@
 <g><title>Cobbetts Pond</title><circle cx="430" cy="728.0" r="13" fill="#2d7dd2" stroke="#fff" stroke-width="1.7"/><text x="430" y="734.0" text-anchor="middle" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="18" font-weight="700" fill="#fff">13</text></g>
 <g><title>Country Pond</title><circle cx="524" cy="691.6" r="13" fill="#2d7dd2" stroke="#fff" stroke-width="1.7"/><text x="524" y="697.6" text-anchor="middle" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="18" font-weight="700" fill="#fff">14</text></g>
 <g><title>Great Pond</title><circle cx="538" cy="658.0" r="13" fill="#2d7dd2" stroke="#fff" stroke-width="1.7"/><text x="538" y="664.0" text-anchor="middle" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="18" font-weight="700" fill="#fff">15</text></g>
-<g font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="10" fill="#5a7090">
-<rect x="14" y="150" width="150" height="92" rx="6" fill="#fff" stroke="#dde5ee"/>
-<rect x="26" y="162" width="16" height="11" fill="#4db6e8" fill-opacity="0.4" stroke="#2d7dd2"/><text x="48" y="171">Service area</text>
-<line x1="26" y1="186" x2="42" y2="186" stroke="#e85f2d" stroke-width="2.4" stroke-dasharray="5 3"/><text x="48" y="190">Boundary (Squam)</text>
-<line x1="26" y1="204" x2="42" y2="204" stroke="#5b6b7d" stroke-width="2.6"/><text x="48" y="208">Major highway</text>
-<circle cx="34" cy="222" r="5.5" fill="#2d7dd2"/><text x="48" y="226">Lake we serve</text>
-</g></svg>
+</svg>
