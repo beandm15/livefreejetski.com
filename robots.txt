@@ -1,4 +1,4 @@
-# robots.txt for nhjetfun.com
+# robots.txt for livefreejetski.com
 # Search engines and AI assistants are welcome to crawl and index this site.
 
 User-agent: *
@@ -41,4 +41,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://nhjetfun.com/sitemap.xml
+Sitemap: https://livefreejetski.com/sitemap.xml
