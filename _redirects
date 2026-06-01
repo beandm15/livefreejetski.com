@@ -1,0 +1,3 @@
+# Redirect old domain to new domain (301 permanent)
+https://nhjetfun.com/*      https://livefreejetski.com/:splat   301!
+https://www.nhjetfun.com/*  https://livefreejetski.com/:splat   301!
