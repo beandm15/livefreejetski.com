@@ -491,7 +491,7 @@ footer{background:rgba(245,237,224,.95);padding:2rem 8%;display:flex;align-items
       <div class="ski-thumb-row">
         <div class="ski-thumb active" onclick="setImg('g2','sk2_front',this)"><img src="/sk2-front.jpg" alt=""></div>
         <div class="ski-thumb" onclick="setImg('g2','sk2_side',this)"><img src="/sk2-side.jpg" alt=""></div>
-        <div class="ski-thumb" onclick="setImg('g2','sk2_rider',this)"><img src="/sk2-rider.jpg" alt=""></div>
+        <div class="ski-thumb" onclick="setImg('g2','sk2_angle',this)"><img src="/sk2-angle.jpg" alt=""></div>
       </div>
       <div class="ski-body">
         <div class="ski-name">Sea-Doo GTR 230</div>
@@ -858,7 +858,7 @@ const imgSrcs = {
   sk1_front:"/sk1-front.jpg",
   sk2_front:"/sk2-front.jpg",
   sk2_side:"/sk2-side.jpg",
-  sk2_rider:"/sk2-rider.jpg"
+  sk2_angle:"/sk2-angle.jpg"
 };
 function setImg(gId,key,el){
   document.getElementById(gId+'-main').src=imgSrcs[key];
