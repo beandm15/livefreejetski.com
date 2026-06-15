@@ -266,8 +266,8 @@ section{padding:5rem 8%;}
 .featured .pc-list li::before{color:var(--wave);}
 #lifestyle{background:var(--navy);padding:0;}
 .lifestyle-inner{display:grid;grid-template-columns:1.2fr 1fr;min-height:400px;}
-.lifestyle-img{overflow:hidden;}
-.lifestyle-img img{width:100%;height:100%;object-fit:cover;display:block;}
+.lifestyle-img{overflow:hidden;background:url("/lifestyle-poster.jpg") center/cover no-repeat;}
+.lifestyle-img video{width:100%;height:100%;object-fit:cover;display:block;}
 .lifestyle-text{display:flex;flex-direction:column;justify-content:center;padding:3.5rem 5%;}
 .lifestyle-text .section-tag{color:var(--wave);}
 .lifestyle-text .section-tag::before{background:var(--wave);}
@@ -547,7 +547,11 @@ footer{background:rgba(245,237,224,.95);padding:2rem 8%;display:flex;align-items
 
 <section id="lifestyle">
   <div class="lifestyle-inner">
-    <div class="lifestyle-img"><img src="/gtr230-beach-anchored.jpg" alt="GTR 230 anchored on New Hampshire lake beach"></div>
+    <div class="lifestyle-img">
+      <video autoplay muted loop playsinline preload="none">
+        <source src="/lifestyle.mp4" type="video/mp4">
+      </video>
+    </div>
     <div class="lifestyle-text">
       <div class="section-tag">New Hampshire Lakes</div>
       <h2 class="section-title">Your Lake.<br>Your Schedule.</h2>
@@ -854,7 +858,9 @@ footer{background:rgba(245,237,224,.95);padding:2rem 8%;display:flex;align-items
       </div>
     </div>
     <div class="contact-form" style="padding:0;border:none;background:transparent;overflow:hidden;border-radius:16px;">
-      <img src="/jetski-sunset.jpg" alt="Live Free Jet Ski - Jet Ski on the Water at Sunset" style="width:100%;height:100%;object-fit:cover;display:block;border-radius:16px;">
+      <video autoplay muted loop playsinline preload="none" style="width:100%;height:100%;object-fit:cover;display:block;border-radius:16px;background:url('/contact-poster.jpg') center/cover no-repeat;">
+        <source src="/contact.mp4" type="video/mp4">
+      </video>
     </div>
   </div>
 </section>
