@@ -162,7 +162,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .nav-toggle.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
 section{scroll-margin-top:80px;}
 #hero{min-height:100vh;position:relative;display:flex;align-items:stretch;overflow:hidden;}
-.hero-bg{position:absolute;inset:0;z-index:0;background-image:url("/hero-2skis.jpg");background-size:cover;background-position:top center;filter:brightness(1.05) saturate(1.05);}
+.hero-bg{position:absolute;inset:0;z-index:0;overflow:hidden;background:url("/hero-poster.jpg") top center/cover no-repeat;filter:brightness(1.05) saturate(1.05);}
+.hero-bg video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center;}
 .hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,22,40,.42) 0%,rgba(10,22,40,.12) 22%,rgba(10,22,40,0) 46%,rgba(10,22,40,.30) 72%,rgba(10,22,40,.62) 100%);}
 .hero-content{position:relative;z-index:2;padding:4.5rem 8% 3.5rem;max-width:710px;display:flex;flex-direction:column;animation:fadeUp .9s ease both;}
 @keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
@@ -405,7 +406,8 @@ footer{background:rgba(245,237,224,.95);padding:2rem 8%;display:flex;align-items
 @media(max-width:600px){
   #hero{min-height:auto;padding:68px 0 0;display:block;position:relative;overflow:hidden;background:var(--navy);}
   /* Mobile-only photo banner: full-width, un-zoomed, BOTH skis visible (sky/trees above, water below) */
-  .hero-bg{position:absolute;inset:auto;top:68px;left:0;right:0;height:80vw;background-image:url("/hero-2skis-mobile.jpg");background-size:cover;background-position:center;}
+  .hero-bg{position:absolute;inset:auto;top:68px;left:0;right:0;height:80vw;background-image:url("/hero-poster.jpg");background-size:cover;background-position:center;}
+  .hero-bg video{display:none;}
   .hero-bg::after{inset:auto;top:68px;left:0;right:0;height:80vw;background:linear-gradient(180deg,rgba(10,22,40,.42) 0%,rgba(10,22,40,.04) 26%,rgba(10,22,40,0) 60%,rgba(10,22,40,.45) 88%,var(--navy) 100%);}
   /* Headline overlaid on the trees, ABOVE the skis, two lines, left-justified */
   .hero-content{position:relative;z-index:2;max-width:none;display:block;flex:none;padding:80vw 6% 0;}
@@ -442,7 +444,11 @@ footer{background:rgba(245,237,224,.95);padding:2rem 8%;display:flex;align-items
 </nav>
 
 <section id="hero">
-  <div class="hero-bg"></div>
+  <div class="hero-bg">
+    <video autoplay muted loop playsinline preload="none">
+      <source src="/hero.mp4" type="video/mp4">
+    </video>
+  </div>
   <div class="hero-content">
     <h1 class="hero-title">Ride the <em>Open Water</em></h1>
   </div>
