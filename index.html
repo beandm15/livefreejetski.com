@@ -274,11 +274,16 @@ section{padding:5rem 8%;}
 .lifestyle-text .section-title{color:var(--white);}
 .lifestyle-text p{font-size:.92rem;color:rgba(255,255,255,.57);line-height:1.75;margin-top:.9rem;}
 #faq{background:var(--sand);}
-.faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-top:2.6rem;}
-.faq-item{background:var(--white);border-radius:10px;padding:1.4rem 1.6rem;}
-.faq-q{font-weight:600;font-size:.91rem;color:var(--navy);margin-bottom:.45rem;display:flex;gap:.5rem;}
-.faq-q::before{content:"Q";font-family:"Bebas Neue",sans-serif;color:var(--sky);font-size:1rem;flex-shrink:0;}
-.faq-a{font-size:.83rem;color:var(--muted);line-height:1.65;}
+.faq-layout{display:grid;grid-template-columns:1fr .82fr;gap:2.5rem;align-items:start;margin-top:2.6rem;}
+.faq-grid{display:flex;flex-direction:column;gap:1rem;}
+.faq-item{background:var(--white);border-radius:10px;padding:0;overflow:hidden;}
+.faq-q{font-weight:600;font-size:.91rem;color:var(--navy);margin:0;display:flex;align-items:center;justify-content:space-between;gap:.75rem;cursor:pointer;padding:1.15rem 1.4rem;}
+.faq-q::after{content:"+";font-family:"Bebas Neue",sans-serif;color:var(--sky);font-size:1.55rem;line-height:1;flex-shrink:0;}
+.faq-item.open .faq-q::after{content:"\2212";}
+.faq-a{display:none;font-size:.83rem;color:var(--muted);line-height:1.65;padding:0 1.4rem 1.25rem;}
+.faq-item.open .faq-a{display:block;}
+.faq-photo{border-radius:12px;overflow:hidden;box-shadow:0 12px 40px rgba(10,22,40,.16);}
+.faq-photo img{width:100%;height:auto;display:block;}
 #about{background:var(--white);}
 .about-inner{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;}
 .about-text{font-size:.95rem;color:var(--muted);line-height:1.78;}
@@ -357,15 +362,9 @@ footer{background:rgba(245,237,224,.95);padding:2rem 8%;display:flex;align-items
   footer{flex-direction:column;gap:1.2rem;text-align:center;}
   .gallery-strip{grid-template-columns:1fr 1fr;}.gallery-strip img{height:170px;}
 }
-/* ===== FAQ accordion — mobile only; desktop stays fully expanded ===== */
+/* ===== FAQ: stack photo below questions on mobile ===== */
 @media(max-width:900px){
-  .faq-item{padding:0;}
-  .faq-q{cursor:pointer;align-items:center;justify-content:space-between;margin:0;padding:1.15rem 1.4rem;gap:.75rem;}
-  .faq-q::before{display:none;}
-  .faq-q::after{content:"+";font-family:"Bebas Neue",sans-serif;color:var(--sky);font-size:1.55rem;line-height:1;flex-shrink:0;}
-  .faq-item.open .faq-q::after{content:"\2212";}
-  .faq-a{display:none;padding:0 1.4rem 1.25rem;}
-  .faq-item.open .faq-a{display:block;}
+  .faq-layout{grid-template-columns:1fr;gap:1.5rem;}
 }
 @media(max-width:480px){
   section{padding:2.5rem 6%;}
@@ -821,7 +820,8 @@ footer{background:rgba(245,237,224,.95);padding:2rem 8%;display:flex;align-items
   <div class="section-tag">FAQ</div>
   <h2 class="section-title">Common Questions</h2>
   <p class="section-lead">Everything you need to know before your first ride.</p>
-  <div class="faq-grid">
+  <div class="faq-layout">
+    <div class="faq-grid">
     <div class="faq-item"><div class="faq-q">Do I need a boating license?</div><div class="faq-a">New Hampshire doesn't issue a separate jet ski license, but state law requires every operator 16 or older who runs a personal watercraft or a motorboat over 25 HP to hold a Safe Boater Education Certificate &mdash; so every jet ski operator needs one. See our <a href="#certificates" style="color:var(--sky);">Get Certified</a> section for four easy online options, or read our full <a href="/boating-license.html" style="color:var(--sky);">NH boating license guide</a>. You must present your certificate at delivery.</div></div>
     <div class="faq-item"><div class="faq-q">What&apos;s the minimum operator age?</div><div class="faq-a">The primary renter must be at least 21 with a government-issued photo ID, which we verify at delivery. Operators must be at least 16; those aged 16&ndash;17 must be accompanied by a supervising adult 21 or older at all times. Passengers of any age are welcome with a qualified operator.</div></div>
     <div class="faq-item"><div class="faq-q">Where can I ride?</div><div class="faq-a">We deliver to lakes across central and southern New Hampshire, from the Massachusetts line up to Squam Lake &mdash; see <a href="#lakes" style="color:var(--sky);">lakes served</a>. We do not deliver north of Squam Lake. Note that NH law does not allow jet skis on public waters under 75 acres, and saltwater or tidal bodies such as Great Bay are not permitted.</div></div>
@@ -830,6 +830,8 @@ footer{background:rgba(245,237,224,.95);padding:2rem 8%;display:flex;align-items
     <div class="faq-item"><div class="faq-q">What&apos;s included in the price?</div><div class="faq-a">Delivery and pickup (NH), USCG-approved life jackets for all riders, pre-delivery safety walkthrough, and all registration and safety documents. Ski delivered with full tank of gas; Renter is responsible to refill with provided gas can, or otherwise pay convenience fee.</div></div>
     <div class="faq-item"><div class="faq-q">How does the security deposit work?</div><div class="faq-a">$500 refundable deposit collected at delivery, returned within 5 business days after satisfactory return &mdash; less any amounts for damage, late fees, or fuel shortfall.</div></div>
     <div class="faq-item"><div class="faq-q">What if something breaks down?</div><div class="faq-a">Call us immediately. We maintain both craft meticulously. In the case of a failure outside Renter&apos;s control, we&apos;ll work to make it right, including pro-rated adjustment where possible.</div></div>
+    </div>
+    <div class="faq-photo"><img src="/ski_lake00012.jpg" alt="Sea-Doo jet ski docked at a New Hampshire lake"></div>
   </div>
 </section>
 
