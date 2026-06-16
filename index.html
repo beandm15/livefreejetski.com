@@ -130,7 +130,7 @@
         {
           "@type": "Question",
           "name": "What is included in the price?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Delivery and pickup within New Hampshire, USCG-approved life jackets for all riders, a pre-delivery safety walkthrough, and all registration and safety documents. Fuel is the renter's responsibility." }
+          "acceptedAnswer": { "@type": "Answer", "text": "Delivery and pickup within New Hampshire, USCG-approved life jackets for all riders, a pre-delivery safety walkthrough, and all registration and safety documents. Ski delivered with full tank of gas; Renter is responsible to refill with provided gas can, or otherwise pay convenience fee." }
         }
       ]
     }
@@ -356,6 +356,16 @@ footer{background:rgba(245,237,224,.95);padding:2rem 8%;display:flex;align-items
   .form-input,.form-select,.form-textarea{font-size:16px;}
   footer{flex-direction:column;gap:1.2rem;text-align:center;}
   .gallery-strip{grid-template-columns:1fr 1fr;}.gallery-strip img{height:170px;}
+}
+/* ===== FAQ accordion — mobile only; desktop stays fully expanded ===== */
+@media(max-width:900px){
+  .faq-item{padding:0;}
+  .faq-q{cursor:pointer;align-items:center;justify-content:space-between;margin:0;padding:1.15rem 1.4rem;gap:.75rem;}
+  .faq-q::before{display:none;}
+  .faq-q::after{content:"+";font-family:"Bebas Neue",sans-serif;color:var(--sky);font-size:1.55rem;line-height:1;flex-shrink:0;}
+  .faq-item.open .faq-q::after{content:"\2212";}
+  .faq-a{display:none;padding:0 1.4rem 1.25rem;}
+  .faq-item.open .faq-a{display:block;}
 }
 @media(max-width:480px){
   section{padding:2.5rem 6%;}
@@ -817,7 +827,7 @@ footer{background:rgba(245,237,224,.95);padding:2rem 8%;display:flex;align-items
     <div class="faq-item"><div class="faq-q">Where can I ride?</div><div class="faq-a">We deliver to lakes across central and southern New Hampshire, from the Massachusetts line up to Squam Lake &mdash; see <a href="#lakes" style="color:var(--sky);">lakes served</a>. We do not deliver north of Squam Lake. Note that NH law does not allow jet skis on public waters under 75 acres, and saltwater or tidal bodies such as Great Bay are not permitted.</div></div>
     <div class="faq-item"><div class="faq-q">Do you deliver to my lake?</div><div class="faq-a">Likely yes, if it&apos;s south of Squam Lake. Beyond the lakes listed in <a href="#lakes" style="color:var(--sky);">lakes served</a>, we also drop off at many smaller southern NH lakes and ponds &mdash; such as Lake Sunapee, Country Pond, Great Pond, and Pawtuckaway Lake &mdash; just ask when you book and we&apos;ll confirm your specific water body.</div></div>
     <div class="faq-item"><div class="faq-q">Can I use it for tubing or wakeboarding?</div><div class="faq-a">The Wake 155 (SK-01) is tow-sport ready with advance written authorization. The GTR 230 (SK-02) can also tow but is better suited to performance riding. Ask us before booking if towing is a priority.</div></div>
-    <div class="faq-item"><div class="faq-q">What&apos;s included in the price?</div><div class="faq-a">Delivery and pickup (NH), USCG-approved life jackets for all riders, pre-delivery safety walkthrough, and all registration and safety documents. Fuel is Renter&apos;s responsibility.</div></div>
+    <div class="faq-item"><div class="faq-q">What&apos;s included in the price?</div><div class="faq-a">Delivery and pickup (NH), USCG-approved life jackets for all riders, pre-delivery safety walkthrough, and all registration and safety documents. Ski delivered with full tank of gas; Renter is responsible to refill with provided gas can, or otherwise pay convenience fee.</div></div>
     <div class="faq-item"><div class="faq-q">How does the security deposit work?</div><div class="faq-a">$500 refundable deposit collected at delivery, returned within 5 business days after satisfactory return &mdash; less any amounts for damage, late fees, or fuel shortfall.</div></div>
     <div class="faq-item"><div class="faq-q">What if something breaks down?</div><div class="faq-a">Call us immediately. We maintain both craft meticulously. In the case of a failure outside Renter&apos;s control, we&apos;ll work to make it right, including pro-rated adjustment where possible.</div></div>
   </div>
@@ -982,6 +992,16 @@ document.addEventListener("DOMContentLoaded", function() {
     if (typeof gtag !== "function") return;
     gtag("event", "conversion", { "send_to": "AW-1052931893/xRV8CMPU-gEQte6J9gM" });
   });
+})();
+</script>
+<script>
+(function () {
+  var qs = document.querySelectorAll("#faq .faq-q");
+  for (var i = 0; i < qs.length; i++) {
+    qs[i].addEventListener("click", function () {
+      this.parentElement.classList.toggle("open");
+    });
+  }
 })();
 </script>
 </body>
