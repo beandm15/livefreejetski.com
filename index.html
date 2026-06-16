@@ -406,11 +406,11 @@ footer{background:rgba(245,237,224,.95);padding:2rem 8%;display:flex;align-items
 @media(max-width:600px){
   #hero{min-height:auto;padding:68px 0 0;display:block;position:relative;overflow:hidden;background:var(--navy);}
   /* Mobile-only photo banner: full-width, un-zoomed, BOTH skis visible (sky/trees above, water below) */
-  .hero-bg{position:absolute;inset:auto;top:68px;left:0;right:0;height:80vw;background-image:url("/hero-poster.jpg");background-size:cover;background-position:center;}
-  .hero-bg video{display:none;}
-  .hero-bg::after{inset:auto;top:68px;left:0;right:0;height:80vw;background:linear-gradient(180deg,rgba(10,22,40,.42) 0%,rgba(10,22,40,.04) 26%,rgba(10,22,40,0) 60%,rgba(10,22,40,.45) 88%,var(--navy) 100%);}
+  .hero-bg{position:absolute;inset:auto;top:68px;left:0;right:0;height:56.25vw;background-image:url("/hero-poster.jpg");background-size:cover;background-position:center;}
+  .hero-bg video{display:block;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;}
+  .hero-bg::after{inset:auto;top:68px;left:0;right:0;height:56.25vw;background:linear-gradient(180deg,rgba(10,22,40,.42) 0%,rgba(10,22,40,.04) 26%,rgba(10,22,40,0) 60%,rgba(10,22,40,.45) 88%,var(--navy) 100%);}
   /* Headline overlaid on the trees, ABOVE the skis, two lines, left-justified */
-  .hero-content{position:relative;z-index:2;max-width:none;display:block;flex:none;padding:80vw 6% 0;}
+  .hero-content{position:relative;z-index:2;max-width:none;display:block;flex:none;padding:56.25vw 6% 0;}
   .hero-eyebrow{display:none;}
   .hero-title{position:absolute;top:22px;left:6%;right:6%;margin:0;z-index:3;white-space:normal;font-size:clamp(1.4rem,6vw,2.2rem);line-height:1.08;text-shadow:0 2px 14px rgba(0,0,0,.72);}
   .hero-title em{display:block;}
@@ -421,6 +421,19 @@ footer{background:rgba(245,237,224,.95);padding:2rem 8%;display:flex;align-items
   .hero-stats .stat{flex:1 1 0;min-width:0;}
   .stat-num{font-size:1.6rem;}
   .stat-label{font-size:.56rem;letter-spacing:.05em;margin-top:.18rem;}
+}
+/* ===== Mobile LANDSCAPE home hero (phones turned sideways) ===== */
+@media (orientation:landscape) and (max-height:500px){
+  #hero{display:block;min-height:auto;padding:58px 0 0;position:relative;overflow:hidden;background:var(--navy);}
+  /* Video as a self-contained banner sized to the visible screen; text flows below */
+  .hero-bg{position:relative;inset:auto;top:auto;left:auto;right:auto;width:100%;height:calc(100vh - 58px);background-image:url("/hero-poster.jpg");background-size:cover;background-position:center;}
+  .hero-bg video{display:block;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;}
+  .hero-bg::after{inset:0;top:auto;left:auto;right:auto;height:auto;}
+  .hero-content{position:relative;z-index:2;max-width:none;display:block;flex:none;padding:1.4rem 8% 0;}
+  .hero-eyebrow{display:none;}
+  .hero-title{position:static;left:auto;right:auto;top:auto;margin:0 0 .3rem;font-size:clamp(2rem,7vw,3rem);text-shadow:0 2px 14px rgba(0,0,0,.72);}
+  .hero-bottom{position:static;left:auto;bottom:auto;max-width:none;padding:0 8%;margin-top:.6rem;}
+  .hero-stats{position:static;left:auto;right:auto;bottom:auto;margin:1.2rem 0 0;padding:0 8% 1.6rem;justify-content:flex-start;gap:1.6rem 2rem;}
 }
 </style>
 </head>
