@@ -152,6 +152,10 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .figure img{width:100%;border-radius:12px;display:block;box-shadow:0 8px 32px rgba(10,22,40,.12);}
 .figure svg{width:100%;height:auto;border-radius:12px;display:block;background:var(--off);border:1px solid rgba(0,0,0,.07);}
 .figcaption{font-size:.82rem;color:var(--muted);margin-top:.7rem;text-align:center;font-style:italic;}
+.dock-gallery{display:grid;grid-template-columns:1fr 1fr;gap:1rem;}
+.dock-gallery img{width:100%;height:auto;border-radius:12px;display:block;box-shadow:0 8px 32px rgba(10,22,40,.12);}
+.dock-gallery .span-full{grid-column:1 / -1;}
+@media(max-width:600px){.dock-gallery{grid-template-columns:1fr;}}
 .cta-band{background:linear-gradient(135deg,var(--ocean),var(--sky));border-radius:16px;padding:2.2rem 2rem;text-align:center;margin:3rem 0 1rem;}
 .cta-band img{width:100%;max-height:230px;object-fit:cover;border-radius:10px;margin-bottom:1.5rem;display:block;}
 .cta-band h3{font-family:"DM Serif Display",serif;color:var(--white);font-size:1.6rem;margin-bottom:.6rem;}
@@ -263,7 +267,7 @@ footer a{color:var(--wave);text-decoration:none;}
     <p><strong>Always switch the engine completely OFF before anyone gets on or off the craft from the water.</strong> A spinning jet intake is dangerous to swimmers. When you pull up to collect a rider who's swimming, kill the engine first, then let them climb on from the rear boarding step.</p>
   </div>
   <div class="figure">
-    <img src="/sk1-side.jpg" alt="A Live Free Jet Ski Sea-Doo Wake 155 idling on a calm New Hampshire lake">
+    <img src="/ski_lake00009.jpg" alt="A Live Free Jet Ski Sea-Doo Wake 155 idling on a calm New Hampshire lake">
     <div class="figcaption">Idle in, engine off, then bring riders aboard from the rear step. Calm and deliberate beats fast every time.</div>
   </div>
 
@@ -422,8 +426,12 @@ footer a{color:var(--wave);text-decoration:none;}
     <li><strong>If the dock has posts or pilings that stick out,</strong> it's usually better to put the bumpers on the posts themselves rather than on the ski. That way the hull stays protected even if the ski shifts a foot or two along the dock &mdash; the cushioning is right on the hard edge where it's needed.</li>
   </ul>
   <div class="figure">
-    <img src="/docking-bumpers.jpg" alt="Sea-Doo GTR 230 floating with soft tow bumpers hung along the hull to protect it at a dock">
-    <div class="figcaption">Soft tow bumpers hung along the hull, ready to cushion the ski against a dock. Position them like this on the dock side, then tie off with the bungee cords &mdash; and tuck the bumpers back in the front trunk before you ride.</div>
+    <div class="dock-gallery">
+      <img src="/ski_lake00007.jpg" alt="Sea-Doo jet skis tied alongside a dock with soft bumpers, seen from above">
+      <img src="/ski_lake00008.jpg" alt="Sea-Doo jet ski secured bow-in at a New Hampshire lake dock">
+      <img src="/ski_lake00006.jpg" class="span-full" alt="Sea-Doo Wake 155 moored alongside a dock with tie-down lines">
+    </div>
+    <div class="figcaption">Tied alongside a dock with bumpers and bungee lines — held snug against the dock but still free to rise and fall with the water.</div>
   </div>
   <div class="callout warn">
     <div class="callout-title">&#9888;&#65039; Keep it out of the shallows</div>

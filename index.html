@@ -444,6 +444,29 @@ footer{background:rgba(245,237,224,.95);padding:2rem 8%;display:flex;align-items
   .hero-bottom{position:static;left:auto;bottom:auto;max-width:none;padding:0 8%;margin-top:.6rem;}
   .hero-stats{position:static;left:auto;right:auto;bottom:auto;margin:1.2rem 0 0;padding:0 8% 1.6rem;justify-content:flex-start;gap:1.6rem 2rem;}
 }
+/* ===== Mobile: compact In-Depth Guides + FAQ to fit on one screen ===== */
+@media(max-width:600px){
+  /* In-Depth Guides: drop intro lead + card descriptions, tighten padding */
+  #guides{padding-top:2rem;padding-bottom:2rem;}
+  #guides .section-tag{margin-bottom:.5rem;}
+  #guides .section-title{margin-bottom:.4rem;}
+  #guides .section-lead{display:none;}
+  .guides-grid{gap:.55rem !important;margin-top:1rem !important;}
+  .guides-grid > a{padding:.85rem 1rem !important;}
+  .guides-grid > a > div:first-child{margin-bottom:.25rem !important;}
+  .guides-grid > a > div:nth-child(2){margin-bottom:0 !important;line-height:1.18 !important;}
+  .guides-grid > a > div:last-child{display:none !important;}
+  /* Common Questions: tighten rows + shorten the photo so all 8 + image fit */
+  #faq{padding-top:2rem;padding-bottom:2rem;}
+  #faq .section-tag{margin-bottom:.5rem;}
+  #faq .section-title{margin-bottom:.45rem;}
+  #faq .section-lead{margin-bottom:0;font-size:.9rem;}
+  .faq-layout{gap:.8rem !important;margin-top:1.1rem;}
+  .faq-grid{gap:.35rem;}
+  .faq-q{padding:.5rem 1rem;font-size:.86rem;}
+  .faq-q::after{font-size:1.35rem;}
+  .faq-photo img{height:150px;object-fit:cover;}
+}
 </style>
 </head>
 <body>
@@ -792,7 +815,7 @@ footer{background:rgba(245,237,224,.95);padding:2rem 8%;display:flex;align-items
   <div class="section-tag">Learn More</div>
   <h2 class="section-title">In-Depth Guides</h2>
   <p class="section-lead" style="max-width:none;">Want the full picture before you book? These detailed guides answer the questions renters ask most.</p>
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem;margin-top:2.4rem;">
+  <div class="guides-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem;margin-top:2.4rem;">
     <a href="/guide.html" style="display:block;background:var(--white);border-radius:14px;padding:1.7rem 1.8rem;text-decoration:none;box-shadow:0 4px 28px rgba(10,22,40,.08);transition:transform .3s,box-shadow .3s;border:1px solid rgba(45,125,210,.08);">
       <div style="font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--sky);font-weight:700;margin-bottom:.6rem;">Complete Guide</div>
       <div style="font-family:'DM Serif Display',serif;font-size:1.3rem;color:var(--navy);margin-bottom:.45rem;line-height:1.2;">Renting a Jet Ski in New Hampshire</div>
